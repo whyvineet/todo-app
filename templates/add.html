@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Add Task</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Add New Task</h1>
+        <form action="{{ url_for('add') }}" method="POST">
+            <label for="title">Task Title:</label>
+            <input type="text" name="title" id="title" required>
+            <br>
+            <button type="submit" class="btn btn-add">Add Task</button>
+        </form>
+    </div>
+</body>
+</html>

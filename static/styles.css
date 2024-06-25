@@ -1,0 +1,98 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.task-table th,
+.task-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.task-table th {
+  background-color: #f4f4f9;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.completed {
+  background-color: #4caf50;
+}
+
+.not-completed {
+  background-color: #f44336;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.btn-edit {
+  background-color: #ffa726;
+}
+
+.btn-delete {
+  background-color: #f44336;
+}
+
+.btn-complete {
+  background-color: #4caf50;
+}
+
+.btn-add {
+  display: block;
+  width: fit-content;
+  background-color: #2196f3;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.btn-save {
+  display: block;
+  width: fit-content;
+  background-color: #2196f3;
+  text-align: center;
+  margin: 20px auto;
+}

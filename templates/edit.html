@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Edit Task</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Task</h1>
+        <form action="{{ url_for('edit', task_id=task.id) }}" method="POST" class="form-edit-task">
+            <div class="form-group">
+                <label for="title">Task Title:</label>
+                <input type="text" name="title" id="title" value="{{ task.title }}" required>
+            </div>
+            <button type="submit" class="btn btn-save">Save Changes</button>
+        </form>
+    </div>
+</body>
+</html>
